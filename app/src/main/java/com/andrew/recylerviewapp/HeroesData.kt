@@ -1,11 +1,11 @@
-package com.andrew.recylerviewapp
+import com.andrew.recylerviewapp.R
 
 object HeroesData {
-    private val heroNames = arrayOf(
-        "Ahmad Dahlan",
+    private val heroNames = arrayOf("Ahmad Dahlan",
+        "Ahmad Yani",
         "Sutomo",
-        "Gatot Subroto",
-        "Ki Hadjar Dewantara",
+        "Gatot Soebroto",
+        "Ki Hadjar Dewantarai",
         "Mohammad Hatta",
         "Soedirman",
         "Soekarno",
@@ -23,8 +23,8 @@ object HeroesData {
         "Prof. Mr. Dr. Soepomo (Ejaan Soewandi: Supomo; lahir di Sukoharjo, Jawa Tengah, 22 Januari 1903 – meninggal di Jakarta, 12 September 1958 pada umur 55 tahun) adalah seorang pahlawan nasional Indonesia. Soepomo dikenal sebagai arsitek Undang-undang Dasar 1945, bersama dengan Muhammad Yamin dan Soekarno.",
         "Tan Malaka atau Ibrahim gelar Datuk Sutan Malaka (lahir di Nagari Pandam Gadang, Suliki, Lima Puluh Kota, Sumatera Barat, 2 Juni 1897 – meninggal di Desa Selopanggung, Kediri, Jawa Timur, 21 Februari 1949 pada umur 51 tahun) adalah seorang pembela kemerdekaan Indonesia, tokoh Partai Komunis Indonesia, juga pendiri Partai Murba, dan merupakan salah satu Pahlawan Nasional Indonesia.")
 
-    private val heroesImages = intArrayOf(
-        R.drawable.ahmad_dahlan,
+    private val heroesImages = intArrayOf(R.drawable.ahmad_dahlan,
+        R.drawable.ahmad_yani,
         R.drawable.bung_tomo,
         R.drawable.gatot_subroto,
         R.drawable.ki_hadjar_dewantara,
@@ -35,15 +35,15 @@ object HeroesData {
         R.drawable.tan_malaka)
 
     val listData: ArrayList<Hero>
-    get() {
-        val list = arrayListOf<Hero>()
-        for (position in heroNames.indices) {
-            val hero = Hero()
-            hero.name = heroNames[position]
-            hero.detail = heroDetails[position]
-            hero.photo = heroesImages[position]
-            list.add(hero)
+        get() {
+            val list = arrayListOf<Hero>()
+            for (position in heroNames.indices) {
+                val hero = Hero()
+                hero.name = heroNames[position]
+                hero.detail = heroDetails[position]
+                hero.photo = heroesImages[position]
+                list.add(hero)
+            }
+            return list
         }
-        return list
-    }
 }
