@@ -16,14 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:padding="8dp">
-        
+
         <ImageView
             android:id="@+id/img_item_photo"
             android:layout_width="150dp"
             android:layout_height="220dp"
             android:layout_marginBottom="4dp"
             android:scaleType="centerCrop"
-            tools:src="@tools:sample/avatars"/>
+            tools:src="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/tv_item_name"
@@ -71,7 +71,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/favorite"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:autoSizeTextType="uniform"
+                android:maxLines="1"
+                tools:targetApi="o"/>
             <Button
                 android:id="@+id/btn_set_share"
                 style="@style/Widget.AppCompat.Button.Colored"
@@ -79,7 +82,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/share"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:autoSizeTextType="uniform"
+                android:maxLines="1"
+                tools:targetApi="o"/>
         </LinearLayout>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
