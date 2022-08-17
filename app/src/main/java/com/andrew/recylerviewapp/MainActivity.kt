@@ -60,14 +60,17 @@ class MainActivity : AppCompatActivity() {
     private fun setMode(selectedMode: Int) {
         when (selectedMode) {
             R.id.action_list -> {
+                title = "Mode List"
                 showRecyclerList()
             }
 
             R.id.action_grid -> {
+                title = "Mode List"
                 showRecyclerGrid()
             }
 
             R.id.action_cardview -> {
+                title = "Mode List"
                 showRecyclerCardView()
             }
         }
