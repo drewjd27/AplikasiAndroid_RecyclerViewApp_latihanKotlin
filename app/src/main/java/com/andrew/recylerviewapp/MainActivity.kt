@@ -65,12 +65,12 @@ class MainActivity : AppCompatActivity() {
             }
 
             R.id.action_grid -> {
-                title = "Mode List"
+                title = "Mode Grid"
                 showRecyclerGrid()
             }
 
             R.id.action_cardview -> {
-                title = "Mode List"
+                title = "Mode Card View"
                 showRecyclerCardView()
             }
         }
